@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;&display=swap');
+/* Lexend Deca */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;&display=swap');
+
+p{
+    font-size: 15px;
+}
+:root{
+    /* primary */
+    --vdblue: hsl(233, 47%, 7%); /*main bg*/
+    --ddblue: hsl(244, 38%, 16%); /* card bg*/
+    /* neutral */
+    --white: hsl(0, 0%, 100%); /* main headingg, stats*/
+    --stwhite: hsla(0, 0%, 100%, 0.75); /* main paragraph */
+    --stwhiteh: hsla(0, 0%, 100%, 0.6); /* start heading*/
+}
+.container{
+    background-color: var(--vdblue);
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    font-family: "Inter", "Lexend Deca",sans-serif;
+    width: 80vw;
+    height: auto;
+    background-color: var(--ddblue);
+    border-radius: .5rem;
+    margin: 4rem 0;
+}
+img{
+    width: inherit;
+    border-radius: .5rem .5rem 0 0;
+    filter: opacity(.5);
+}
+.box1{
+    margin: 1rem;
+}
+.heading{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+.heading span{
+    color: rgb(148, 57, 148);
+}
+.des{
+    text-align: center;
+    color: var(--stwhite);
+    margin: 1rem 0;
+    font-size: 1em;
+}
+.box2{
+    text-align: center;
+    color: var(--stwhiteh);
+    padding: .5rem;
+}
+.card-inside{
+    padding: 1rem;
+}
+.stat-desi span{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.5em;
+}
+.stat-des{
+    margin: 1rem 0;
+}
+.stat-des p{
+    font-size: 1em;
+}
+.stat-desi {
+    text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 1024px) {
+   body{
+       font-size: 1.5em;
+   }
+    .container{
+        height: 100vh;
+    }
+    .card{
+        width: 80vw;
+        height: auto;
+        display: flex;
+    }
+    .image{
+        order: 2;
+        width: 40vw;
+        border-radius: 0 .5rem .5rem 0;
+    }
+    .card-inside{
+        width: 40vw;
+        order: 1;
+        margin: 3rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 4rem;
+    }
+    .box1, .box2{
+        width: auto;
+    }
+    .box1 h1, .box1 p{
+        text-align: left;
+    }
+    .stat{
+        display: flex;
+        justify-content: start;
+        gap: 3rem;
+    }
+  }
