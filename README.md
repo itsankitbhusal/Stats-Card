@@ -1,4 +1,4 @@
-# https://ankitbhusal.github.io/Stats-Card/
+# https://itsankitbhusal.github.io/Stats-Card/
 # Frontend Mentor - Stats preview card component
 
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
